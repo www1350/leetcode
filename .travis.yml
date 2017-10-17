@@ -4,4 +4,4 @@ jdk:
   - oraclejdk8
   
   
-install: cd java && mvn clean install
+install: cd java && mvn clean install && mvn test -B
