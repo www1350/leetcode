@@ -20,7 +20,7 @@ public class P2Test {
     public void addTwoNumbersSolution(){
         P2 p2 = new P2();
         int a[] = {2,4,3,5,7,8,5};
-        int b[] = {5,6,4,7,9,5,1};
+        int b[] = {5,6,4,7,9,5,4};
 //        int a[]={5};
 //        int b[]={5};
         P2.ListNode l1 =   p2.new ListNode(-1);
@@ -44,6 +44,6 @@ public class P2Test {
             resList.add(res.val);
             res=res.next;
         }
-        assertThat(resList, is(equalTo(Arrays.asList(7, 0, 8, 2, 7, 4, 7))));
+        assertThat(resList, is(equalTo(Arrays.asList(7, 0, 8, 2, 7, 4, 0,1))));
     }
 }
