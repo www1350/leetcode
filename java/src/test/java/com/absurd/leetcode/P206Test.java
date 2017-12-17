@@ -9,9 +9,9 @@ public class P206Test {
     @Test
     public void reverseList(){
         P206 p = new P206();
-        P206.ListNode head = new P206.ListNode(1);
-        head.next = new P206.ListNode(2);
-        P206.ListNode.toAll(head);
-        P206.ListNode.toAll(p.reverseList(head));
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        System.out.println(head.toString());
+        System.out.println(p.reverseList(head));
     }
 }

@@ -7,10 +7,11 @@ import org.junit.Test;
  * @author wangwenwei
  * @time 2017/12/12
  */
-public class P23Test {
+public class P23_3Test {
     @Test
     public void mergeKLists(){
-        Assert.assertEquals(P23.mergeKLists(makeList1()),makeList1Result());
+        Assert.assertEquals(P23_3.mergeKLists(makeList1()),makeList1Result());
+        Assert.assertEquals(makeList2Result(),ListNode.reverse(makeList1Result()));
     }
 
 
@@ -25,6 +26,10 @@ public class P23Test {
 
     ListNode makeList1Result(){
         return ListNode.makeListNode(new int[]{1,2,3,4,5,6,7,8,9});
+    }
+
+    ListNode makeList2Result(){
+        return ListNode.makeListNode(new int[]{9,8,7,6,5,4,3,2,1});
     }
 
 }

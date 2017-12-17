@@ -7,10 +7,10 @@ import org.junit.Test;
  * @author wangwenwei
  * @time 2017/12/12
  */
-public class P23Test {
+public class P23_2Test {
     @Test
     public void mergeKLists(){
-        Assert.assertEquals(P23.mergeKLists(makeList1()),makeList1Result());
+        Assert.assertEquals(P23_2.mergeKLists(makeList1()),makeList1Result());
     }
 
 

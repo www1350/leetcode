@@ -52,22 +52,4 @@ public class P92 {
         mmNode.next = nNode;
         return head;
     }
-
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-
-        public static ListNode makeListNode(int[] arr){
-            ListNode head = new ListNode(arr[0]);
-            ListNode e = head;
-            for(int i=1;i<arr.length;i++){
-                e.next = new ListNode(arr[i]);
-                e = e.next;
-            }
-            e.next = null;
-            return head;
-        }
-    }
 }

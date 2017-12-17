@@ -42,18 +42,4 @@ public class P206 {
         return a;
     }
 
-
-      public static class ListNode {
-          int val;
-          ListNode next;
-          ListNode(int x) { val = x; }
-          public static  void toAll(ListNode head){
-              while (head!=null){
-                  System.out.printf(head.val+"");
-                  head = head.next;
-              }
-              System.out.println();
-          }
-      }
-
 }
