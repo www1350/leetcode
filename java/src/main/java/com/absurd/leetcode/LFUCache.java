@@ -127,6 +127,10 @@ public class LFUCache {
         }
 
 
+        /***
+         * 头插法
+         * @param node
+         */
         public void add(Node<T> node){
             Node<T> e = this.head;
             node.next = e;
