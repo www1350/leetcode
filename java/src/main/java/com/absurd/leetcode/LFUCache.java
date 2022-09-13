@@ -45,7 +45,9 @@ public class LFUCache {
 
     public int get(int key) {
         Integer value = kvMaps.get(key);
-        if (value ==null) return -1;
+        if (value ==null) {
+            return -1;
+        }
         Node<Integer> node = kNodeMaps.get(key);
         LinkNode<Integer> linkNode = node.listNode;
         int oldFre = node.getFreq();
@@ -70,7 +72,9 @@ public class LFUCache {
     }
 
     public void put(int key, int value) {
-        if (capacity == 0) return;
+        if (capacity == 0) {
+            return;
+        }
         Integer oldValue = kvMaps.get(key);
         kvMaps.put(key,value);
         //不为空，去掉旧的(error)
@@ -160,7 +164,7 @@ public class LFUCache {
         }
     }
 
-    class Node<T>{
+    public class Node<T>{
         private T value;
         private int freq;
         private Node<T> next;
