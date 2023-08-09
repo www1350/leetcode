@@ -2,7 +2,15 @@ package com.absurd.leetcode;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public class P9Test {
+
+
     @Test
     public void isPalindrome(){
         assert P9.isPalindrome(121) == true;
