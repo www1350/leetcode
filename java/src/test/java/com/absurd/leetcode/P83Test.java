@@ -7,9 +7,9 @@ import org.junit.Test;
  * @time 2018/7/30
  */
 public class P83Test {
-    P83 p83 = new P83();
     @Test
     public void deleteDuplicates(){
+        P83 p83 = new P83();
         ListNode head = new ListNode(3);
         ListNode listNode = head;
         listNode.next = new ListNode(3);

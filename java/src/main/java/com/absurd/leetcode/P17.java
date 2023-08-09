@@ -21,16 +21,36 @@ public class P17 {
      * @param digits
      * @return
      */
-//    public List<String> letterCombinations(String digits) {
-//        List<String> result = new ArrayList<>();
-//        String[] chars = new String[]{"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
-//        int size = digits.length();
-//        String[] res = new String[size];
-//        for(int i=0;i<size;i++){
-//            String tmp = chars[digits.charAt(i) - '0'];
-//            res[i] = tmp;
-//        }
-//
-//
-//    }
+    public List<String> letterCombinations(String digits) {
+        List<String> result = new ArrayList<>();
+        if (digits.length() == 0){
+            return result;
+        }
+        String[] chars = new String[]{"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        int size = digits.length();
+        String[] digArr = new String[size];
+        for(int i=0;i<size;i++){
+            String tmp = chars[digits.charAt(i) - '0'];
+            digArr[i] = tmp;
+        }
+        char[] stack = new char[digits.length()];
+        backStack(digArr, stack, 0, result);
+        return result;
+
+
+    }
+
+    private void backStack(String[] digArr, char[] stack, int stackIndex,List<String> result) {
+        if (stackIndex == digArr.length){
+            result.add(new String(stack));
+            return;
+        }
+        for(int i=0;i<digArr[stackIndex].length();i++){
+            stack[stackIndex] = digArr[stackIndex].charAt(i);
+            stackIndex++;
+            backStack(digArr, stack, stackIndex, result);
+            stackIndex--;
+        }
+
+    }
 }
