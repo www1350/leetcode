@@ -9,8 +9,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @author yunyong.www
- * @version P649.java, v 0.1 2023年08月18日 13:53 yunyong.www
+ * @author Absurd
+ * @version P649.java, v 0.1 2023年08月18日 13:53 Absurd
  */
 public class P649 {
 

@@ -8,8 +8,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * @author yunyong.www
- * @version P649Test.java, v 0.1 2023年08月18日 14:15 yunyong.www
+ * @author Absurd
+ * @version P649Test.java, v 0.1 2023年08月18日 14:15 Absurd
  */
 public class P649Test {
     @Test
