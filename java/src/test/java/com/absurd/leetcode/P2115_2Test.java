@@ -1,7 +1,3 @@
-/*
- * Ant Group
- * Copyright (c) 2004-2023 All Rights Reserved.
- */
 package com.absurd.leetcode;
 
 import org.junit.Assert;
@@ -12,8 +8,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author yunyong.www
- * @version P2115Test.java, v 0.1 2023年08月24日 15:33 yunyong.www
+ * @author Absurd
+ * @version P2115Test.java, v 0.1 2023年08月24日 15:33 Absurd
  */
 public class P2115_2Test {
     @Test
