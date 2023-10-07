@@ -32,10 +32,10 @@ public class P25 {
         for(;length>=k;length-=k){
             ListNode pHead = null;
             for(int i=0;i<k;i++){
-                ListNode tmp = head;
-                head =head.next;
-                tmp.next = pHead;
-                pHead = tmp;
+                ListNode cur = head.next;
+                head.next = pHead;
+                pHead = head;
+                head = cur;
             }
             resultTmp.next = pHead;
             while (resultTmp.next !=null){ resultTmp = resultTmp.next;}
